@@ -1,0 +1,62 @@
+.body-home{
+       font-family: Arial, sans-serif;
+    background-image: url('https://cdn.dribbble.com/users/453547/screenshots/2431248/credntia-dribbble.gif'); /* Background image for the entire page */
+   background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .container {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: transparent; /* Set background color to transparent */
+  }
+  .left {
+    flex: 1;
+    display: flex;
+   justify-content: right;
+    text-align: right;
+  }
+  .home h1 {
+    font-size: 30px; 
+    color: #4204ff; 
+    margin-bottom: 30px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+  }
+  
+  .links a button {
+    padding: 10px 20px;
+    background-color: #ed460e;
+    color: white; 
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links a button:hover {
+    background-color: #0aec70; 
+  }
+  
+  p {
+    color: #10f349;
+    font-size: 18px; 
+    font-family: Arial, sans-serif; 
+    font-style: italic; 
+    font-weight: bold;
+  }
+  
+  

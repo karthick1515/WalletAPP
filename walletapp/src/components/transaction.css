@@ -1,0 +1,58 @@
+.transaction-details {
+    padding: 20px;
+  }
+  .transaction-h2{
+    text-align: center;
+  }
+  .go-back-button{
+    background-color: #0aec2c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .transaction-body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://img.freepik.com/premium-photo/pink-purple-background-with-pink-background-word-love-it_873925-15398.jpg');
+  background-size: cover;
+  padding: 50px;
+  }
+
+  .transaction-details h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .transaction-details table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .transaction-details th,
+  .transaction-details td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .transaction-details th {
+    background-color: #f2f2f2;
+  }
+  
+  .transaction-details tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .transaction-details tr:hover {
+    background-color: #ddd;
+  }
+  
+  .no-transactions {
+    font-style: italic;
+    color: #888;
+  }
+  
