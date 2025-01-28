@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://summalinguae.com/wp-content/uploads/2017/03/shutterstock_2056990349-1024x512.jpg'); /* Background image for the entire page */
+  background-size: cover;
+  background-position: right; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; 
+}
+.left {
+  flex: 1;
+  display: flex;
+ 
+  justify-content: left;
+  text-align: left;
+}
+.home h1 {
+  font-size: 30px; 
+  color: #09e5e9; 
+  margin-bottom: 30px;
+  font-weight: bold; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  align-items: center;
+}
+
+.links a button {
+  padding: 10px 20px;
+  background-color: #ed460e;
+  color: white; 
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.links a button:hover {
+  background-color: #0aec70; 
+}
+
+p {
+  color: #cdf310;
+  font-size: 18px; 
+  font-family: Arial, sans-serif; 
+  font-style: italic; 
+  font-weight: bold;
+}

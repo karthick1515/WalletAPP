@@ -1,0 +1,56 @@
+<body>
+  <div class="head"><h2>Wallet Login</h2></div>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <table>
+    <tr>
+      <td>
+        <img src="https://topflightapps.com/wp-content/uploads/2021/08/digital-wallet-development-main-banner.jpg">
+      </td>
+      <td>
+<form class="form-horizontal" #loginForm="ngForm" (ngSubmit)="submitLogin(loginForm)"> 
+ 
+<div class="login-form">
+    <h4>Enter The Credentials</h4>
+    <hr>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="login.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+        <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].dirty">
+          Please enter a valid email address.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="login.password" required>
+      </div>
+      <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].dirty">
+        Please enter Password.
+      </div>
+      <button type="submit">Login</button>
+      <p></p>
+      <a routerLink="/forgotpassword">forgot password </a>Or
+      <a routerLink="/signup">signup</a>
+      
+      <p></p>
+  </div>
+</form>
+</td>
+</tr>
+</table>
+</body>

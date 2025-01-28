@@ -1,0 +1,21 @@
+<body>
+<h2>Profile</h2>
+<hr>
+<div class="profile"> 
+    <div *ngIf="loggedInWallet">
+      <p><strong>Name:</strong> {{ loggedInWallet.fullName }}</p>
+      <p><strong>Email:</strong> {{ loggedInWallet.emailAddress }}</p>
+      <p><strong>Password:</strong>******</p>
+      <p><strong>Wallet ID:</strong> {{ loggedInWallet.id }}</p>
+      <p><strong>Wallet PIN:</strong>****</p>
+      <p><strong>Phone Number:</strong> {{ loggedInWallet.phoneNumber }}</p>
+      <p><strong>Date of Birth:</strong> {{ loggedInWallet.dateOfBirth | date }}</p>
+      <p><strong>Address:</strong> {{ loggedInWallet.address}}</p>
+      <p><strong>Balance : </strong> {{ loggedInWallet.balance | currency:'RS ':'symbol':'1.2-2' }}</p>
+    </div>
+    <a routerLink="/dashboard"><button> Go Back</button></a>
+    <div *ngIf="!loggedInWallet">
+      <p>You are not logged in.</p>
+    </div>
+  </div>
+</body>

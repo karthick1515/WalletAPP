@@ -1,0 +1,87 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-46444.jpg');
+            padding: 60px;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dashboard {
+            margin: 20px;
+        }
+img{
+height: 250px;
+width: 250px;
+}
+h2{
+  text-align: center;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logout-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;  
+        }
+        .button-viewprofile{
+          background-color: #2587c5;
+          color: rgb(149, 20, 20);
+          border: none;
+          border-radius: 3px;
+          padding: 10px 20px;
+          cursor: pointer;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+        .button-sendmoney{
+          background-color: #08e76c;
+          color: rgb(149, 20, 20);
+          border: none;
+          border-radius: 3px;
+          padding: 10px 20px;
+          cursor: pointer;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+        .button-transactions{
+          background-color: #e9c911;
+          color: rgb(149, 20, 20);
+          border: none;
+          border-radius: 3px;
+          padding: 10px 20px;
+          cursor: pointer;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+        .button-addmoney{
+          background-color: #8c07eb;
+          color: rgb(149, 20, 20);
+          border: none;
+          border-radius: 3px;
+          padding: 10px 20px;
+          cursor: pointer;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+        .button-logout{
+          background-color: #ff0909;
+          border: none;
+          border-radius: 3px;
+          padding: 10px 20px;
+          cursor: pointer;
+          text-decoration: none;
+          margin-right: 10px;
+        }
+        

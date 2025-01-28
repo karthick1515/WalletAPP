@@ -1,0 +1,36 @@
+<body>
+<h2>Transaction Details</h2>
+<hr>
+<a routerLink="/dashboard"><button class="go-back-button"> Go Back</button></a>
+<div class="transaction-details">
+    <table >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Sender/Receiver ID</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="transactions.length > 0; else noTransactions">
+          <tr *ngFor="let transaction of transactions">
+            <td>{{ transaction.transactionid }}</td>
+            <td>{{ transaction.transactionType }}</td>
+            <td>{{ transaction.transactionDate }}</td>
+            <td>{{ transaction.transactionTime }}</td>
+            <td>{{ transaction.senderorReceiverid }}</td>
+            <td>{{ transaction.amount }}</td>
+          </tr>
+        </ng-container>
+        <ng-template #noTransactions>
+          <tr>
+            <td colspan="7">No transactions available.</td>
+          </tr>
+        </ng-template>
+      </tbody>
+    </table>
+  </div>
+</body>

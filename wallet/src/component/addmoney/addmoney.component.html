@@ -1,0 +1,105 @@
+<body>
+  <h2>Add Money From Bank Account</h2>
+  <hr>
+<div class="addmoney-form">
+  <a routerLink="/dashboard"><button class="go-back-button"> Go Back</button></a>
+    <form class="form-group" #bankAccountForm="ngForm" (ngSubmit)="submitBankAccount(bankAccountForm)">
+      <div>
+        <label for="accountHolderName">Account Holder's Name:</label>
+        <input type="text" id="accountHolderName" name="accountHolderName" [(ngModel)]="bankAccount.accountHolderName" required
+               pattern="^[A-Za-z ]+$">
+        <div *ngIf="bankAccountForm.controls['accountHolderName'].hasError('pattern') && bankAccountForm.controls['accountHolderName'].dirty">
+          Account Holder's Name should contain only alphabets and can have spaces.
+        </div>
+      </div>
+  
+      <div>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="number" id="mobileNumber" name="mobileNumber" [(ngModel)]="bankAccount.mobileNumber" required
+               pattern="^\d{10}$">
+        <div *ngIf="bankAccountForm.controls['mobileNumber'].hasError('pattern') && bankAccountForm.controls['mobileNumber'].dirty">
+          Mobile Number should be exactly 10 digits.
+        </div>
+      </div>
+  
+      <div>
+        <label for="accountType">Account Type:</label>
+        <select type="text" id="accountType" name="accountType" [(ngModel)]="bankAccount.accountType" required>
+          <option value="">Select Account Type</option>
+          <option value="Savings">Savings</option>
+          <option value="Salary">Salary</option>
+          <option value="Joint">Joint</option>
+        </select>
+      </div>
+  
+      <div >
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="accountNumber" name="accountNumber" [(ngModel)]="bankAccount.accountNumber" required
+               pattern="^\d{12}$">
+        <div *ngIf="bankAccountForm.controls['accountNumber'].hasError('pattern') && bankAccountForm.controls['accountNumber'].dirty">
+          Account Number should be exactly 12 digits.
+        </div>
+      </div>
+  
+      <div >
+        <label for="ifsccode">IFSC Code:</label>
+        <input type="text" id="ifsccode" name="ifsccode" [(ngModel)]="bankAccount.ifsccode" required
+               pattern="^[A-Za-z]{3}[0-9]{7}$">
+        <div *ngIf="bankAccountForm.controls['ifsccode'].hasError('pattern') && bankAccountForm.controls['ifsccode'].dirty">
+          IFSC Code should be in the format Ex:ABC1234567.
+        </div>
+      </div>
+  
+      <div >
+        <label for="atmCardNumber">ATM Card Number:</label>
+        <input type="number" id="atmCardNumber" name="atmCardNumber" [(ngModel)]="bankAccount.atmCardNumber" required
+               pattern="^\d{16}$" min="1">
+        <div *ngIf="bankAccountForm.controls['atmCardNumber'].hasError('pattern') && bankAccountForm.controls['atmCardNumber'].dirty">
+          ATM Card Number should be exactly 16 digits.
+        </div>
+      </div>
+  
+      <div >
+        <label for="bankName">Bank Name:</label>
+        <select type="text" id="bankName" name="bankName" [(ngModel)]="bankAccount.bankName" required>
+          <option value="">Select a Bank</option>
+          <option value="HDFC Bank">HDFC Bank</option>
+          <option value="Indian Bank">Indian Bank</option>
+          <option value="South Indian Bank">South Indian Bank</option>
+          <option value="ICICI Bank">ICICI Bank</option>
+        </select>
+      </div>
+  
+      <div >
+        <label for="atmPin">ATM PIN:</label>
+        <input type="password" id="atmPin" name="atmPin" [(ngModel)]="bankAccount.atmPin" required
+               pattern="^\d{4}$">
+        <div *ngIf="bankAccountForm.controls['atmPin'].hasError('pattern') && bankAccountForm.controls['atmPin'].dirty">
+          Enter the Valid ATM PIN .
+        </div>
+      </div>
+  
+      <div >
+        <label for="senderorReceiverid">Your Wallet ID:</label>
+        <input type="number" id="senderorReceiverid" name="senderorReceiverid" [(ngModel)]="transaction.senderorReceiverid" required
+               min="1">
+        <div *ngIf="bankAccountForm.controls['senderorReceiverid'].hasError('min') && bankAccountForm.controls['senderorReceiverid'].dirty">
+          Receiver ID must be positive.
+        </div>
+      </div>
+  
+      <div >
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" [(ngModel)]="transaction.amount" required
+               min="100" max="10000000">
+        <div *ngIf="bankAccountForm.controls['amount'].hasError('min') && bankAccountForm.controls['amount'].dirty">
+          Amount must be greater than or equal to 100.
+        </div>
+        <div *ngIf="bankAccountForm.controls['amount'].hasError('max') && bankAccountForm.controls['amount'].dirty">
+          Amount must be less than or equal to 10000000.
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>

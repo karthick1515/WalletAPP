@@ -1,0 +1,63 @@
+<body>
+  <h2>Send Money</h2>
+  <hr>
+  <table>
+    <tr>
+      <td><img src="https://files.secure.website/wscfus/10656881/29362993/moneytransfer-home-w947-o.png">
+      </td>
+   <td>
+<div class="send-money-form">
+    <form #sendMoneyForm="ngForm" (ngSubmit)="sendMoney(sendMoneyForm)">
+      <div class="form-group">
+        <label for="receiverId">Receiver ID:</label>
+        <input
+          type="number"
+          id="receiverId"
+          name="receiverId"
+          [(ngModel)]="sendtransaction['senderorReceiverid']"
+          required
+          min="1"
+        >
+        <div *ngIf="sendMoneyForm.controls['receiverId'].invalid && sendMoneyForm.controls['receiverId'].dirty">
+          Receiver ID must be Positive.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          [(ngModel)]="sendtransaction['amount']"
+          required
+          min="100"
+          max="10000000"
+        >
+        <div *ngIf="sendMoneyForm.controls['amount'].invalid && sendMoneyForm.controls['amount'].dirty">
+          Amount must filled between 100 to 10000000.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="walletPin">Wallet PIN:</label>
+        <input
+          type="password"
+          id="walletPin"
+          name="walletPin"
+          [(ngModel)]="walletPin"
+          required
+          pattern="^[1-9][0-9]{3,5}$"
+        >
+        <div *ngIf="sendMoneyForm.controls['walletPin'].invalid && sendMoneyForm.controls['walletPin'].dirty">
+          Please Fill the valid Wallet PIN.
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" [disabled]="sendMoneyForm.invalid">Send Money</button>
+      </div>
+      <a routerLink="/dashboard"><button class="go-back-button"> Go Back</button></a>
+    </form>
+  </div>
+</td>
+</tr>
+</table>
+</body>

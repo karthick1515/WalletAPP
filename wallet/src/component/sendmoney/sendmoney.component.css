@@ -1,0 +1,73 @@
+.send-money-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ZQqtjUleVSCUwY3etSbpgSGIEVodXIhg9NUpwSfzzWI-sGdF0UpzMqiFp0m_5okjKl8&usqp=CAU');
+    background-size: cover;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ZQqtjUleVSCUwY3etSbpgSGIEVodXIhg9NUpwSfzzWI-sGdF0UpzMqiFp0m_5okjKl8&usqp=CAU');
+    background-size: cover;
+    padding: 23px;
+  }
+  h2{
+    text-align: center;
+    padding: 15px;
+  }
+  .go-back-button{
+    background-color: #0aec2c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .send-money-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group button {
+    background-color: #0dcef0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  img{
+    width: 920px;
+    height: 430px;
+    border-radius: 50px;
+      }

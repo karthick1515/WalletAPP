@@ -1,0 +1,56 @@
+.profile {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background-image: url('https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  body{
+    background-image: url('https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+ padding: 35px;
+ background-size: cover;
+ font-family: 'Times New Roman', Times, serif;
+  }
+  .profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .profile p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  h2{
+    align-content: center;
+    text-align: center;
+  }
+  .profile strong {
+    font-weight: bold;
+  }
+  
+  .profile button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .profile button:hover {
+    background-color: #0aeb25;
+  }
+  
+  .profile a {
+    text-decoration: none;
+    color: #00f953;
+  }
+  
+  .profile a:hover {
+    text-decoration: underline;
+  }
+  
